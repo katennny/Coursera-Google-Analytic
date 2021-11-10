@@ -1,4 +1,9 @@
 # Automobile-dataset-practice
 SQL practice for Google Data Analytics Professional Certificate on Coursera
-## According to the data’s description, the fuel_type column should only have two unique string values: diesel and gas. Check and make sure that’s true
-
+### According to the data’s description, the fuel_type column should only have two unique string values: diesel and gas. Check and make sure that’s true
+'''
+SELECT
+  DISTINCT fuel_type
+FROM
+  cars.car_info;
+'''
