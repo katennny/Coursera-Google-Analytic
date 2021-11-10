@@ -1,5 +1,5 @@
-# Automobile-dataset-practice
-SQL practice for Google Data Analytics Professional Certificate on Coursera
+# Automobile Data cleaning practice
+SQL data cleaning practice for Google Data Analytics Professional Certificate on Coursera
 ### Step 1: Inspect colums
 According to the data’s description, the *fuel_type* column should only have two unique string values: diesel and gas. Check and make sure that’s true
 ```
