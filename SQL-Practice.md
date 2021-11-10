@@ -34,3 +34,17 @@ FROM
 ORDER BY
  country
 ```
+
+### Question 4
+You are working with a database table that contains customer data. 
+The table includes columns about customer location such as city, state, and country. The state names are abbreviated. 
+You want to retrieve the first 2 letters of each state name and store the result in a new column as new_state. 
+```
+SELECT
+customer_id,
+SUBSTR(state,1,2) AS new_state
+FROM
+customer
+ORDER BY
+state DESC
+```
