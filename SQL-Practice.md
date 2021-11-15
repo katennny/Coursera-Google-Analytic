@@ -60,6 +60,7 @@ FROM invoices
 WHERE BillingCountry = 'Germany'
 AND Total > 5;
 ```
+
 ### Question 5
 You are working with a database table that contains customer data. 
 The country column designates the country where each customer is located. You want to find out which customers are located in Brazil. 
@@ -70,6 +71,7 @@ SELECT *
 FROM customer
 WHERE country = 'Brazil';
 ```
+
 ### Question 6
 You are working on a project about music and have a table of genres you need to sort. The Genres table contains the columns GenreId and Name.
 Write a SQL query to return the name of each genre from this table in alphabetical order.
@@ -78,6 +80,7 @@ SELECT Name
 FROM Genres
 ORDER BY Name;
 ```
+
 ### Question 7
 You are working on a project about music and have a table of tracks you need to sort.
 The database you use contains a Tracks table. The table contains the following columns: TrackId, Name, AlbumId, MediaTypeId, GenreId, Composer, Milliseconds, Bytes, and UnitPrice.
@@ -87,4 +90,23 @@ SELECT *
 FROM Tracks
 WHERE Composer = 'Chris Cornell'
 ORDER BY GenreId DESC;
+```
+
+### Question 8
+You are querying a database that contains data about music. Each album is given an ID number. You are only interested in data related to the album with ID number 6. The album IDs are listed in the album_id column. 
+You write the SQL query that will return only data about the album with ID number 6.
+```
+SELECT *
+FROM track
+WHERE album_id = 6;
+```
+
+### Question 9 
+You are working with a database that contains invoice data about online music purchases. You are only interested in invoices sent to customers located in the city of Paris. You want to sort the invoices by order total in ascending order. The order totals are listed in the total column. 
+You write the SQL query that will sort the invoices by order total in ascending order.
+```
+SELECT * 
+FROM invoice
+WHERE billing_city = 'Paris'
+ORDER BY total;
 ```
