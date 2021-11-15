@@ -70,3 +70,21 @@ SELECT *
 FROM customer
 WHERE country = 'Brazil';
 ```
+### Question 6
+You are working on a project about music and have a table of genres you need to sort. The Genres table contains the columns GenreId and Name.
+Write a SQL query to return the name of each genre from this table in alphabetical order.
+```
+SELECT Name
+FROM Genres
+ORDER BY Name;
+```
+### Question 7
+You are working on a project about music and have a table of tracks you need to sort.
+The database you use contains a Tracks table. The table contains the following columns: TrackId, Name, AlbumId, MediaTypeId, GenreId, Composer, Milliseconds, Bytes, and UnitPrice.
+Write a SQL query to pull all columns from the Tracks table for only tracks with Chris Cornell as the composer. Sort the results in descending order by GenreId.
+```
+SELECT *
+FROM Tracks
+WHERE Composer = 'Chris Cornell'
+ORDER BY GenreId DESC;
+```
