@@ -110,3 +110,30 @@ FROM invoice
 WHERE billing_city = 'Paris'
 ORDER BY total;
 ```
+### Question 10
+You are working with a database table that contains invoice data. The table includes columns for invoice_line_id (line items for each invoice), invoice_id, unit_price, and quantity (the number of purchases in each line item). Each invoice contains multiple line items. You want to know the total price for each of the first 5 line items in the table. 
+Write SQL query that calculates the total price for each line item and stores it in a new column as line_total. 
+```
+SELECT 
+invoice_line_id,
+invoice_id,
+unit_price,
+quantity,
+unit_price*quantity AS line_total
+FROM invoice_item 
+LIMIT 5;
+```
+
+### Question 11
+You are working with a database table that contains data about music. The table includes columns for track_id, track_name, composer, and album_id. You are only interested in data about the classical musician Johann Sebastian Bach. You want to create new album IDs. You decide to multiply the current album IDs by 10 to create new album IDs, and use the AS command to store them in a new column called new_album_id. 
+```
+SELECT
+track_id,
+track_name,
+composer,
+album_id,
+album_id * 10 AS new_album_id
+FROM track
+WHERE composer = "Johann Sebastian Bach";
+```
+
